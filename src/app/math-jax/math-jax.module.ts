@@ -75,7 +75,13 @@ export class MathJaxModule {
       mathjaxconfigobject = {
         skipStartupTypeset: true,
         messageStyle: 'none',
-        tex2jax: { preview: 'none' },
+        tex2jax: {  inlineMath: [
+                       [ '$$', '$$' ],
+                       [ '\\(', '\\)' ],
+                        [ '\\[', '\\]' ],
+                         [ '[', ']' ]
+                   ],
+                  preview: 'none' },
       };
     }
     else 
